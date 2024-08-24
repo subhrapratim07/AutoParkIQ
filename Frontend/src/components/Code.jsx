@@ -53,7 +53,7 @@ const Code = () => {
 
   const sendCodeToBackend = async () => {
     try {
-      const response = await axios.post("http://localhost:4001/code/codeing", { code });
+      const response = await axios.post("https://autoparkiq-backend.onrender.com/code/codeing", { code });
       console.log('Verification code sent to backend:', response.data);
     } catch (error) {
       console.error('Error sending verification code to backend:', error);
