@@ -17,7 +17,7 @@ function Verify() {
           code: data.code,
         };
     await axios
-      .post("http://localhost:4001/verify/verifing", userInfoS)
+      .post("https://autoparkiq-backend.onrender.com/verify/verifing", userInfoS)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
