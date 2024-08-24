@@ -15,7 +15,7 @@ function Location() {
 
   const onSubmit = async (data) => {
     try {
-      const res = await axios.get("http://localhost:4001/area", { params: { Location: data.Location } });
+      const res = await axios.get("https://autoparkiq-backend.onrender.com/area", { params: { Location: data.Location } });
       setParkingData(res.data);
       toast.success("Data fetched successfully");
     } catch (err) {
