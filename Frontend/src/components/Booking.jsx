@@ -30,7 +30,7 @@ function Booking() {
     setFormData(regInfo);
 
     await axios
-      .post("http://localhost:4001/book/booking", regInfo)
+      .post("https://autoparkiq-backend.onrender.com/book/booking", regInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
